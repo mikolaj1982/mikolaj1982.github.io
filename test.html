@@ -6,20 +6,24 @@
 <body>
 <h1>Welcome to My Blog</h1>
 <p>Click the button below to open the blog post with ID 123 in the app:</p>
-<button onclick="openApp()">Open in App</button>
+<button onclick="openGithubApp()">github</button>
+<button onclick="openDeeplinkApp()">github</button>
 
 <script>
-        function openApp() {
-            // Replace 'poc://mikolaj1982.github.io/blogs/?id=123' with the actual custom scheme URL
+        function openGithubApp() {
             var customSchemeURL = 'poc://mikolaj1982.github.io/blogs/?id=123';
-
-            // Create an anchor element with the custom scheme URL
             var anchor = document.createElement('a');
             anchor.href = customSchemeURL;
-
-            // Trigger a click event on the anchor element to open the app
             anchor.click();
         }
+
+        function openDeeplinkApp() {
+            var customSchemeURL = 'poc://deeplink.flutter.dev/blogs/?id=123';
+            var anchor = document.createElement('a');
+            anchor.href = customSchemeURL;
+            anchor.click();
+        }
+
     </script>
 </body>
 </html>
