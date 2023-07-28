@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Scheme Link</title>
+    <style>
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to My Blog</h1>
+<p>Click the button below to open the blog post with ID 123 in the app:</p>
+<button onclick="openGithubApp()">github</button>
+<!--to do add a gap-->
+
+<button onclick="openDeeplinkApp()">deeplink</button>
+
+<script>
+        function openGithubApp() {
+            var customSchemeURL = 'poc://mikolaj1982.github.io/blogs/?id=123';
+            var anchor = document.createElement('a');
+            anchor.href = customSchemeURL;
+            anchor.click();
+        }
+
+        function openDeeplinkApp() {
+            var customSchemeURL = 'poc://deeplink.flutter.dev/blogs/?id=123';
+            var anchor = document.createElement('a');
+            anchor.href = customSchemeURL;
+            anchor.click();
+        }
+
+    </script>
+</body>
+</html>
