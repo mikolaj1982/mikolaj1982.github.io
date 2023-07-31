@@ -1,11 +1,19 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
+  "applinks":{
+    "apps":[],
+    "details":[
       {
         "appID": "729ZD7K2BK.com.example.deeplinkappp",
-        "paths": [
-          "*"
+        "paths":[
+          "/*"
+        ],
+        "appIDs":[
+          "729ZD7K2BK.com.example.deeplinkappp"
+        ],
+        "components":[
+          {
+            "/":"/*"
+          }
         ]
       }
     ]
